@@ -1,0 +1,391 @@
+% Team Note Sample Template
+% These codes should be guaranteed, fast enough, short and easy to type.
+
+\documentclass[portrait, 8pt, a4paper, oneside, twocolumn]{extarticle}
+
+\usepackage{etoolbox}
+\usepackage{ifthen}
+\usepackage{teamnote}
+% Add pdf pages 
+\usepackage{pdfpages}
+
+
+\teamnote{UIT - VNU HCM}{Baka Team}{Shine - QioCas - Asamai}
+
+\ShowUsage
+\ShowComplexity
+\HideAuthor
+
+\begin{document}
+
+\maketitlepage
+
+% Make Pagebreak if you want.
+% \pagebreak 
+
+\noindent\hrulefill
+
+    \section{Template}
+    \Algorithm{Template}
+    {}
+    {}
+    {cpp}{src/template/template.cpp}
+
+    \noindent\hrulefill
+
+    \Algorithm{Debug}
+    {}
+    {}
+    {cpp}{src/template/debug.h}
+    \noindent\hrulefill
+
+    \Algorithm{Generate}
+    {}
+    {}
+    {cpp}{src/template/gen.h}
+    \noindent\hrulefill
+
+    \Algorithm{Stress Test}
+    {}
+    {}
+    {bash}{src/template/bash.sh}
+    \noindent\hrulefill
+
+    \Algorithm{Pragma}
+    {}
+    {}
+    {cpp}{src/template/pragma.cpp}
+    \noindent\hrulefill
+
+\section{Data Structure}
+	
+    \Algorithm{Mutidimensional Vector}
+    {}
+    {}
+    {cpp}{src/datastructures/dvector.h}
+    \noindent\hrulefill
+
+    \Algorithm{Rollback}
+    {}
+    {}
+    {cpp}{src/datastructures/rollback.h}
+    \noindent\hrulefill
+    
+    
+    \Algorithm{Compress}
+    {}
+    {}
+    {cpp}{src/datastructures/compress.h}
+    \noindent\hrulefill
+    
+    \Algorithm{BIT 2D}
+    {}
+    {}
+    {cpp}{src/datastructures/bit2d.h}
+    \noindent\hrulefill
+    
+    \Algorithm{Spare Table}
+   {}
+   {}
+   {cpp}{src/datastructures/sparetable.h}
+   \noindent\hrulefill
+
+    \Algorithm{Wavelet Tree}
+    {}
+    {}
+    {cpp}{src/datastructures/wavelettree.h}
+    \noindent\hrulefill
+
+    \Algorithm{Sparse lichao tree}
+    {}
+    {}
+    {cpp}{src/datastructures/lichao.h}
+    \noindent\hrulefill
+
+    \Algorithm{Line Container}
+    {}
+    {}
+    {cpp}{src/datastructures/linecontainer.h}
+    \noindent\hrulefill
+
+    \Algorithm{Heavy Light Decomposition}
+	{}
+	{}
+	{cpp}{src/datastructures/hld.h}
+	\noindent\hrulefill
+
+    \Algorithm{Ordered Set}
+    {}
+    {}
+    {cpp}{src/datastructures/orderedset.h}
+    \noindent\hrulefill
+
+    \Algorithm{Merge Sort Tree}
+	{}
+	{}
+	{cpp}{src/datastructures/mergetree.h}
+	\noindent\hrulefill
+
+
+	\Algorithm{Mod Segment Tree}
+	{}
+	{}
+	{cpp}{src/datastructures/segmod.h}
+	\noindent\hrulefill
+    \Algorithm{Treap}
+    {}
+    {}
+    {cpp}{src/datastructures/treap.h}
+    \noindent\hrulefill
+	
+	\Algorithm{Mod Int}
+	{}
+	{}
+	{cpp}{src/datastructures/modint.h}
+	\noindent\hrulefill
+
+	\Algorithm{Color Set}
+	{}
+	{}
+	{cpp}{src/datastructures/colorupdate.h}
+	\noindent\hrulefill
+
+\section{Graphs}
+    \Algorithm{Sack}
+	{}
+	{}
+	{cpp}{src/graphs/sack.h}
+	\noindent\hrulefill
+
+    \Algorithm{Max Matching (Hopcroft)}
+    {}
+    {}
+    {cpp}{src/graphs/maxmatching.h}
+    \noindent\hrulefill
+
+    \Algorithm{Max Matching (Blossom)}
+    {}
+    {}
+    {cpp}{src/graphs/blossom.h}
+    \noindent\hrulefill
+
+    \Algorithm{Max Flow (Push Relabel)}
+    {}
+    {}
+    {cpp}{src/graphs/pushrelabel.h}
+    \noindent\hrulefill
+
+    \Algorithm{Gomory Hu}
+    {}
+    {}
+    {cpp}{src/graphs/gomoryhu.h}
+    \noindent\hrulefill
+
+    \Algorithm{Min Cost Max Flow}
+    {}
+    {}
+    {cpp}{src/graphs/mincostmaxflow.h}
+    \noindent\hrulefill
+
+    \Algorithm{Weighted Matching (Hungarian)}
+    {}
+    {}
+    {cpp}{src/graphs/hungarian.h}
+    \noindent\hrulefill
+
+    \Algorithm{Max Clique}
+    {}
+    {}
+    {cpp}{src/graphs/clique.h}
+    \noindent\hrulefill
+
+    \Algorithm{2 SAT}
+    {}
+    {}
+    {cpp}{src/graphs/2sat.h}
+    \noindent\hrulefill
+
+\section{DP}
+    \Algorithm{Divide And Conquer Optimization}
+    {}
+    {}
+    {cpp}{src/dp/dnc.h}
+    \noindent\hrulefill
+	
+	\Algorithm{SoS $O(3^N)$}
+	{}
+	{}
+	{cpp}{src/dp/sos3n.h}
+	\noindent\hrulefill
+
+	\Algorithm{SoS $O(2^N)$}
+	{}
+	{}
+	{cpp}{src/dp/sos2n.h}
+	\noindent\hrulefill
+
+\section{Strings}
+	
+    \Algorithm{KMP}
+    {}
+    {}
+    {cpp}{src/strings/kmp.h}
+    \noindent\hrulefill
+
+    \Algorithm{Z Function}
+    {}
+    {}
+    {cpp}{src/strings/zfunction.h}
+    \noindent\hrulefill
+
+    \Algorithm{Aho Corasick (static)}
+    {}
+    {}
+    {cpp}{src/strings/aho_corasick.h}
+    \noindent\hrulefill
+
+    \Algorithm{Aho Corasick (vector)}
+    {}
+    {}
+    {cpp}{src/strings/aho_corasickvec.h}
+    \noindent\hrulefill
+
+    
+\section{Math}
+
+    \Algorithm{Chinese Remainder Theorem}
+    {}
+    {}
+    {cpp}{src/math/crt.h}
+    \noindent\hrulefill
+
+    \Algorithm{Miller Rabin}
+    {}
+    {}
+    {cpp}{src/math/millerrabin.h}
+    \noindent\hrulefill
+
+    \Algorithm{Discrete Logarithm}
+    {}
+    {}
+    {cpp}{src/math/discrete_logarithm.h}
+    \noindent\hrulefill
+
+    \Algorithm{Fast Fourier Transform}
+    {}
+    {}
+    {cpp}{src/math/FFT.h}
+    \noindent\hrulefill
+    
+    \Algorithm{Berlekamp massey}
+    {}
+    {}
+    {cpp}{src/math/berlekamp_massey.h}
+    \noindent\hrulefill
+
+    \Algorithm{Advanced}
+	{}
+	{}
+	{cpp}{src/math/advanced.h}
+	\noindent\hrulefill
+\section{Geometry}
+
+    \Algorithm{Geomtry Point}
+    {}
+    {}
+    {cpp}{src/geometry/point.h}
+    \noindent\hrulefill
+
+    \Algorithm{Convex Hull}
+    {}
+    {}
+    {cpp}{src/geometry/convexhull.h}
+    \noindent\hrulefill
+
+    \Algorithm{Manhattan MST}
+    {}
+    {}
+    {cpp}{src/geometry/manhattanmst.h}
+    \noindent\hrulefill
+
+    \Algorithm{Some Common Geometry Operations}
+    {}
+    {}
+    {cpp}{src/geometry/commonoperations.h}
+    \noindent\hrulefill
+
+\section{Miscellaneous}
+     \Algorithm{Subset}
+	{}
+	{}
+	{cpp}{src/miscellaneous/bitset.h}
+	\noindent\hrulefill
+    
+    \Algorithm{Parallel Binary Search}
+	{}
+	{}
+	{cpp}{src/miscellaneous/parallel.h}
+	\noindent\hrulefill
+    
+    \Algorithm{Hilber Order for Mo's}
+    {}
+    {}
+    {cpp}{src/miscellaneous/hilbertmo.h}
+    \noindent\hrulefill
+
+\section{Math Extra}
+\subsection{Combinatorial formulas}
+
+$\sum_{k=0}^{n}k^{2}=n(n+1)(2n+1)/6$\\
+$\sum_{k=0}^{n}k^{3}=n^{2}(n+1)^{2}/4$\\
+$\sum_{k=0}^{n}k^{4}=(6n^{5}+15n^{4}+10n^{3}-n)/30$\\
+$\sum_{k=0}^{n}k^{5}=(2n^{6}+6n^{5}+5n^{4}-n^{2})/12$\\
+$\sum_{k=0}^{n}x^{k}=(x^{n+1}-1)/(x-1)$\\
+$\sum_{k=0}^{n}kx^{k}=(x-(n+1)x^{n+1}+nx^{n+2})/(x-1)^{2}$\\
+${n \choose k}=\frac{n!}{(n-k)!k!}$\\
+${n \choose k}={n-1 \choose k}+{n-1 \choose k-1}$\\
+${n \choose k}=\frac{n}{n-k}{n-1 \choose k}$\\
+${n \choose k}=\frac{n-k+1}{k}{n \choose k-1}$\\
+${n+1 \choose k}=\frac{n+1}{n-k+1}{n \choose k}$\\
+${n \choose k+1}=\frac{n-k}{k+1}{n \choose k}$\\
+$\sum_{k=1}^{n}k\tbinom{n}{k}=n2^{n-1}$\\
+$\sum_{k=1}^{n}k^{2}\tbinom{n}{k}=(n+n^{2})2^{n-2}$\\
+${m+n \choose r}=\sum_{k=0}^{r}{m \choose k}{n \choose r-k}$\\
+${n \choose k}=\prod_{i=1}^{k}\frac{n-k+i}{i}$\\
+
+\subsection{Number theory identities}
+\textbf{Lucas' Theorem:} For non-negative integers $m$ and $n$ and a prime $p$,
+
+$$\binom{m}{n}\equiv\prod_{i=0}^k\binom{m_i}{n_i}\pmod p,$$
+where
+$$m=m_kp^k+m_{k-1}p^{k-1}+\cdots +m_1p+m_0$$
+is the base $p$ representation of $m$, and similarly for $n$.
+
+\subsection{Stirling Numbers of the second kind}
+Number of ways to partition a set of $n$ numbers into $k$ non-empty subsets.
+
+$${n \brace k}=\frac{1}{k!}\sum_{j=0}^{k}(-1)^{(k-j)}{k \choose j}j^n$$
+
+Recurrence relation:
+
+$${0 \brace 0}=1$$
+$${n \brace 0}={0 \brace n}=1$$
+$${n+1 \brace k}=k{n \brace k}+{n \brace k-1}$$
+
+
+\subsection{Burnside's Lemma}
+Let $G$ be a finite group that acts on a set $X$. For each $g$ in $G$ let $X^g$ denote the set of elements in $X$ that are fixed by $g$, which means $X^g=\{x\in X| g(x)=x\}$. Burnside's lemma assers the following formula for the number of orbits, denoted $|X/G|$:
+\begin{align*}
+	|X/G|=\frac{1}{|G|} \sum_{g\in G} |X^g|
+\end{align*}
+
+\subsection{Numerical integration}
+RK4: to integrate $\dot{y} = f(t, y)$ with $y_0 = y(t_0)$, compute
+\begin{align*}
+	k_1 &= f(t_n, y_n) \\
+	k_2 &= f(t_n + \frac h 2, y_n + \frac h 2 k_1) \\
+	k_3 &= f(t_n + \frac h 2, y_n + \frac h 2 k_2) \\
+	k_4 &= f(t_n + h, y_n + h k_3) \\
+	y_{n+1} &= y_n + \frac h 6 (k_1 + 2k_2 + 2k_3 + k_4) 
+\end{align*}
+\end{document}
