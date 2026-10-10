@@ -23,16 +23,16 @@ int stressTest() {
         }
 
         if (system("fc /B test.out test.ans > nul") != 0) {
-            cout << "WA on test " << i << ":\n";
-            cout << "Input:\n";
+            cout << "WA on test " << i << ":" << endl;
+            cout << "Input:" << endl;
             showFile("test.in");
-            cout << "Your answer:\n";
+            cout << "Your answer:" << endl;
             showFile("test.out");
-            cout << "Correct answer:\n";
+            cout << "Correct answer:" << endl;
             showFile("test.ans");
             return 1;
         }
-        cout << "Passed test: " << i << '\n';
+        cout << "Passed test: " << i << endl;
     }
     return 0;
 }
