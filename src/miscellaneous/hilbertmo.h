@@ -27,3 +27,8 @@ inline bool operator<(const Query &a, const Query &b)
 {
     return a.ord < b.ord;
 }
+// sort(Q + 1, Q + num_q + 1);
+// while(l > Q[i].l) adding(--l);
+// while(r < Q[i].r) adding(++r);
+// while(l < Q[i].l) erase(l++);
+// while(r > Q[i].r) erase(r--);
