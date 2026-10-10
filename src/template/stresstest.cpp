@@ -3,14 +3,14 @@ using namespace std;
 
 void showFile(const char* name) {
     ifstream file(name);
-    cout << file.rdbuf() << '\n';
+    cout << file.rdbuf() << endl;
 }
 
 int stressTest() {
     if (system("g++ main.cpp -DSTRESS -O2 -std=c++17 -o stress_main.exe") != 0 ||
         system("g++ brute.cpp -DSTRESS -O2 -std=c++17 -o stress_brute.exe") != 0 ||
         system("g++ gen.cpp -DSTRESS -O2 -std=c++17 -o stress_gen.exe") != 0) {
-        cerr << "Compilation failed.\n";
+        cerr << "Compilation failed." << endl;
         return 1;
     }
 
@@ -18,7 +18,7 @@ int stressTest() {
         if (system(".\\stress_gen.exe > test.in") != 0 ||
             system(".\\stress_main.exe < test.in > test.out") != 0 ||
             system(".\\stress_brute.exe < test.in > test.ans") != 0) {
-            cerr << "Program failed on test " << i << ".\n";
+            cerr << "Program failed on test " << i << "." << endl;
             return 1;
         }
 
